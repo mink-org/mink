@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "target": "es6",
+    "paths": {
+      "@mink/components": ["./packages/components"],
+      "@mink/core": ["./packages/core"]
+    }
+  }
+}

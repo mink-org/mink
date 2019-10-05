@@ -1,0 +1,13 @@
+{
+  "rules": {
+    "no-console": [false],
+    "variable-name": [true, "ban-keywords", "allow-leading-underscore", "allow-pascal-case"],
+    "no-redundant-jsdoc": true,
+    "file-name-casing": [true, "kebab-case"],
+    "quotemark": [true, "single", "jsx-double"],
+    "newline-before-return": true,
+    "jsx-no-lambda": false,
+    "jsx-boolean-value": false,
+    "no-empty-interface": false
+  }
+}
