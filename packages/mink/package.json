@@ -1,0 +1,18 @@
+{
+  "name": "mink",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "bin": {
+    "mink": "./cli.js"
+  },
+  "scripts": {
+    "start": "tsc -w",
+    "build": "tsc",
+    "prestart": "rm -rf lib"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
