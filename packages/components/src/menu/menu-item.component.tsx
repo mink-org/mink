@@ -8,9 +8,9 @@ export interface IMenuItemProps {
 
 const MenuItem: React.FC<IMenuItemProps> = ({ isFocused, hasChildren, children }) => {
   return (
-    <Box justifyContent='space-between'>
+    <Box justifyContent="space-between">
       <Box>
-        <Color yellow={isFocused} bold={isFocused}>{children}</Color>
+        <Color yellow={isFocused} bold={isFocused}>{hasChildren ? '' : ''}{children}</Color>
       </Box>
       <Box marginLeft={1}>
         <Color yellow={isFocused}>{isFocused ? '' : ' '}</Color>

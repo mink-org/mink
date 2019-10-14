@@ -9,13 +9,13 @@ const Item: React.FC<any> = ({ children, position, size }) => {
     return (
       <Box>
         <Color green bgGreen>
-          █
+          {' '}
         </Color>
         <Color black bgGreen>
           {children}
         </Color>
         <Color green bgGreen>
-          █
+          {' '}
         </Color>
         <Color green></Color>
       </Box>
@@ -26,13 +26,13 @@ const Item: React.FC<any> = ({ children, position, size }) => {
     return (
       <Box>
         <Color blue bgBlue>
-          █
+          {' '}
         </Color>
         <Color black bgBlue>
           {children}
         </Color>
         <Color blue bgBlue>
-          █
+          {' '}
         </Color>
         <Color blue bgGreen>
           

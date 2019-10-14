@@ -8,9 +8,10 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "target": "es6",
+    "removeComments": true,
     "paths": {
-      "@mink/components": ["./packages/components"],
-      "@mink/core": ["./packages/core"]
+      "@mink/*": ["./packages/*/src"],
+      "mink": ["./packages/mink"]
     }
   }
 }

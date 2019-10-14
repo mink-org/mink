@@ -1,5 +1,5 @@
 {
-  "name": "@mink/core",
+  "name": "@mink/plugin-welcome",
   "version": "0.0.0",
   "license": "MIT",
   "main": "./lib/index.js",
@@ -11,8 +11,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {
-    "@mink/components": "0.0.0"
   }
 }

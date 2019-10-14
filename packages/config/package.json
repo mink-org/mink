@@ -1,5 +1,5 @@
 {
-  "name": "@mink/core",
+  "name": "@mink/config",
   "version": "0.0.0",
   "license": "MIT",
   "main": "./lib/index.js",
@@ -13,6 +13,9 @@
     "access": "public"
   },
   "dependencies": {
-    "@mink/components": "0.0.0"
+    "rc": "^1.2.8"
+  },
+  "devDependencies": {
+    "@types/rc": "^1.1.0"
   }
 }

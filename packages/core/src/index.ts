@@ -1,3 +1,1 @@
-const app = 'mink';
-
-export default app;
+export { default as renderer } from './renderer';

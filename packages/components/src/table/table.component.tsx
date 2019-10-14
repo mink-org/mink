@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Box, Color } from 'ink';
 
-import { Loader } from '@mink/components/src';
+import Loader from '../loader';
 
 interface ITableColumn {
   id: string;
