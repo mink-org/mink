@@ -14,5 +14,6 @@
   },
   "dependencies": {
     "@mink/components": "^0.0.1"
-  }
+  },
+  "gitHead": "9338898a7e9f2173cd24312afea358cabfc46f6c"
 }

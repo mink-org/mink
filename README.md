@@ -11,7 +11,7 @@ m**i**nk is an interactive terminal application designed to give you an overview
 First you need to install the package, it uses Node.js so make sure you have that already installed.
 
 ```bash
-npm i -g mink
+npm i -g @mink/cli
 ```
 
 Create a `.minkrc` file somewhere, you can have different mink projects in different folders, whenever you run `mink`

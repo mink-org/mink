@@ -1,5 +1,5 @@
 {
-  "name": "mink",
+  "name": "@mink/cli",
   "version": "0.0.1",
   "license": "MIT",
   "main": "./lib/index.js",
@@ -18,5 +18,6 @@
   "dependencies": {
     "@mink/config": "^0.0.1",
     "@mink/core": "^0.0.1"
-  }
+  },
+  "gitHead": "9338898a7e9f2173cd24312afea358cabfc46f6c"
 }

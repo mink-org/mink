@@ -6,3 +6,4 @@ lib
 
 *.tsbuildinfo
 .minkrc
+.DS_Store
