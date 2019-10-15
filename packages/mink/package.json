@@ -1,6 +1,6 @@
 {
   "name": "mink",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -16,7 +16,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@mink/config": "0.0.0",
-    "@mink/core": "0.0.0"
+    "@mink/config": "^0.0.1",
+    "@mink/core": "^0.0.1"
   }
 }
