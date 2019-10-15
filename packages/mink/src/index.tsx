@@ -16,6 +16,11 @@ export interface IPlugin {
 
 const config = getConfig();
 
+if (!config.config) {
+  console.error('Config not found. Are you sure you have created a .minkrc file?');
+  process.exit(1);
+}
+
 // Load Plugins
 const plugins: IPlugin[] = config.plugins.map((pluginName) => {
   let plugin;
