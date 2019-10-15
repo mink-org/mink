@@ -6,7 +6,8 @@ import MenuItem from './menu-item.component';
 
 interface IMenuProps {
   items: any[];
-  onChange: any;
+  indexPath: any;
+  setIndexPath: any;
 }
 
 const getPreviewItemsFromPath = (items: any[], path: number[]) => {
@@ -18,8 +19,7 @@ const getBreadcrumbsFromPath = (items: any[], path: number[]) => path.reduce((ac
   breadcrumbs: [...acc.breadcrumbs, acc.items[curr].name]
 }), { items, breadcrumbs: [] }).breadcrumbs;
 
-const Menu: FC<IMenuProps> = ({ items, onChange }) => {
-  const [indexPath, setIndexPath] = useState<number[]>([]);
+const Menu: FC<IMenuProps> = ({ items, indexPath, setIndexPath }) => {
   const [activePreviewIndex, setActivePreviewIndex] = useState(0);
   const previewItems = getPreviewItemsFromPath(items, indexPath);
   const breadcrumbs = getBreadcrumbsFromPath(items, indexPath);
@@ -32,7 +32,6 @@ const Menu: FC<IMenuProps> = ({ items, onChange }) => {
   const forward = () => {
     setActivePreviewIndex(0);
     setIndexPath((i) => [...i, activePreviewIndex]);
-    onChange(indexPath);
   };
 
   const back = () => {
@@ -92,7 +91,7 @@ const Menu: FC<IMenuProps> = ({ items, onChange }) => {
       <Breadcrumbs breadcrumbs={breadcrumbs} />
       <Box flexDirection="column">
         {previewItems.map(({ name, children }, i) => (
-          <MenuItem key={name} isFocused={activePreviewIndex === i} hasChildren={!!children}>
+          <MenuItem key={name + i} isFocused={activePreviewIndex === i} hasChildren={!!children}>
             [{i + 1}] {name}
           </MenuItem>
         ))}

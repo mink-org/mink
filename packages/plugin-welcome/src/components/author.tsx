@@ -1,8 +1,8 @@
 import React from 'react';
 import { Box } from 'ink';
 
-const Help = () => (
-  <Box>help</Box>
+const Author: React.FC = (props) => (
+  <Box>Author - options: {JSON.stringify(props)}</Box>
 );
 
-export default Help;
+export default Author;

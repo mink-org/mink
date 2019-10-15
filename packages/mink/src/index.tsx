@@ -26,7 +26,7 @@ const plugins: IPlugin[] = config.plugins.map((pluginName) => {
     }
 
     if ((pluginName as any).resolve) {
-      plugin = require.resolve((pluginName as any).resolve);
+      plugin = require((pluginName as any).resolve);
     }
   } catch (e) {
     handlePluginNotFound(e.message, config.config);
@@ -42,7 +42,7 @@ const navigation = plugins.map((p) => ({ name: p.pluginName, children: p.navigat
 console.clear();
 
 // Render mink
-renderer(navigation);
+renderer({ config, navigation });
 
 function handlePluginNotFound(message: string, rcFile: string): void {
   console.error(`Error loading ${rcFile}`);
