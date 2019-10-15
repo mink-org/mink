@@ -4,7 +4,63 @@ Get an overview of your work life in a single terminal window.
 
 m**i**nk is an interactive terminal application designed to give you an overview of whatever you want.
 
-## WORK IN PROGRESS
+> THIS IS STILL A WORK IN PROGRESS
+
+## Install
+
+First you need to install the package, it uses Node.js so make sure you have that already installed.
+
+```bash
+npm i -g mink
+```
+
+Create a `.minkrc` file somewhere, you can have different mink projects in different folders, whenever you run `mink`
+it will automatically go up the tree to find the closest one.
+
+```bash
+touch ~/.minkrc
+```
+
+## Setup (`.minkrc`)
+
+You can arrange your project how you like, the config file will need a plugins property.
+The order of this matters as it will be reflected in the terminal order.
+A plugin will refer to a already installed npm package, it can either be a string. 
+
+```json
+{
+    "plugins": [
+        "@mink/plugin-welcome"
+    ]
+}
+```
+
+Or if the plugin needs some options (api keys for example) you can set a plugin as an object.
+
+```json
+{
+    "plugins": [
+        {
+            "resolve": "@mink/plugin-welcome",
+            "options": {
+                "token": "abc",
+                "something": true
+            }
+        }
+    ]
+}
+```
+
+
+### Run
+
+If you have installed mink globally with npm/yarn you can call it from anywhere.
+
+```bash
+mink
+```
+
+---
 
 ## Features
 
@@ -13,27 +69,3 @@ m**i**nk is an interactive terminal application designed to give you an overview
 - Manage navigation and plugins in a single `.minkrc` config file.
 - Unified components for navigation, selection, focus and IA.
 
-## Plan
-
-1. `yarn global add mink` or `npm i mink -g`
-2. customise `~/.minkrc` how you want, add plugins, sort order etc
-2. run `mink`.
-
-## How
-
-On install `mink` will install it's dependencies such as components, default plugins and cli.
-On load it will search for a `.minkrc` once found it will load each plugin and fail if a plugin is not installed.
-
-```json
-{
-  "plugins": [
-    "my-mink-plugin",
-    {
-      "resolve": "my-other-plugin-that-has-options",
-      "options": {}
-    }
-  ]
-}
-```
-
-Plugin will export a menu structure with each leaf as a component.
