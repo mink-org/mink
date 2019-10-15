@@ -10,8 +10,7 @@
     "target": "es6",
     "removeComments": true,
     "paths": {
-      "@mink/*": ["./packages/*/src"],
-      "mink": ["./packages/mink"]
+      "@mink/*": ["./packages/*/src"]
     }
   }
 }
