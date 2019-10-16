@@ -2,19 +2,13 @@
 
 Create a API token for Jira at https://id.atlassian.com/manage/api-tokens
 
-## Sections
-
-### Board
-
-View active sprint tickets as a table (key, type, summary and status)
-
-#### Install
+## Install
 
 ```bash
 yarn global add @mink/plugin-jira
 ```
 
-#### Options
+## Options
 
 ```json
 {
@@ -28,3 +22,11 @@ yarn global add @mink/plugin-jira
     }
 }
 ```
+
+---
+
+## Sections
+
+### Board
+
+View active sprint tickets as a table (key, type, summary and status)
