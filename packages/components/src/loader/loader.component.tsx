@@ -3,11 +3,7 @@ import React from 'react';
 
 const Loader: React.FC = ({ children }) => (
   <Box>
-    <Color>
-      {' '}
-      {children}
-      {' '}
-    </Color>
+    {children}
   </Box>
 );
 

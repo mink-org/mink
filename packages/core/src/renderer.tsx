@@ -16,18 +16,18 @@ const findComponent = (navigation, path) => {
 
 const App: React.FC<IRendererProps> = ({ navigation, config }) => {
   const [indexPath, setIndexPath] = useState<number[]>([]);
-  let component;
+  let Component;
   let componentOptions = {};
 
   try {
-    component = findComponent(navigation, indexPath);
+    Component = findComponent(navigation, indexPath);
     componentOptions = config.plugins[indexPath[0]] && config.plugins[indexPath[0]].options;
   }
 
   return (
     <Box flexDirection={'column'}>
       <Menu items={navigation} indexPath={indexPath} setIndexPath={setIndexPath} />
-      <Box>{!Array.isArray(component) && component(componentOptions)}</Box>
+      <Box>{!Array.isArray(Component) && React.createElement(Component, { options: componentOptions })}</Box>
     </Box>
   );
 };

@@ -1,0 +1,20 @@
+{
+  "name": "@mink/plugin-jira",
+  "version": "0.0.2",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "start": "tsc -w",
+    "build": "tsc",
+    "prestart": "rm -rf lib"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "9338898a7e9f2173cd24312afea358cabfc46f6c",
+  "dependencies": {
+    "jira-connector": "^2.16.1",
+    "@mink/components": "^0.0.2"
+  }
+}
