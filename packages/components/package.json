@@ -12,5 +12,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "dependencies": {
+    "ink": "^2.4.0",
+    "react": "^16.9.0"
+  },
   "gitHead": "9338898a7e9f2173cd24312afea358cabfc46f6c"
 }

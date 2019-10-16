@@ -20,11 +20,9 @@
     }
   },
   "dependencies": {
-    "ink": "^2.4.0",
     "ink-box": "^1.0.0",
     "ink-spinner": "^3.0.1",
     "lerna": "^3.16.4",
-    "react": "^16.9.0",
     "typescript": "^3.6.3"
   },
   "devDependencies": {
