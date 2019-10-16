@@ -2,6 +2,14 @@
 
 Create a API token for Jira at https://id.atlassian.com/manage/api-tokens
 
+Sections
+
+- [X] Board
+- [ ] Backlog
+- [ ] Issues
+- [ ] Versions
+- [ ] Projects
+
 ## Install
 
 ```bash
