@@ -1,6 +1,6 @@
 {
   "name": "@mink/core",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -13,7 +13,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@mink/components": "^0.0.3",
+    "@mink/components": "^0.0.4",
     "react": "^16.9.0"
   },
   "gitHead": "9338898a7e9f2173cd24312afea358cabfc46f6c"

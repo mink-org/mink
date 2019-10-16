@@ -1,6 +1,6 @@
 {
   "name": "@mink/plugin-jira",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -14,9 +14,9 @@
   },
   "gitHead": "9338898a7e9f2173cd24312afea358cabfc46f6c",
   "dependencies": {
-    "@mink/components": "^0.0.3",
+    "@mink/components": "^0.0.4",
     "ink": "^2.4.0",
-    "react": "^16.9.0",
-    "jira-connector": "^2.16.1"
+    "jira-connector": "^2.16.1",
+    "react": "^16.9.0"
   }
 }
