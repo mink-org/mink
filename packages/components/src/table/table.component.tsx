@@ -13,24 +13,18 @@ interface ITableData {
 }
 
 interface ITableProps {
-  meta: object;
+  meta?: object;
   columns: ITableColumn[];
   data: ITableData[];
 }
 
+const isLast = (i, a) => a.length - 1 === i;
+
 const Table: React.FC<ITableProps> = ({ meta, columns, data }) => {
   return (
     <Box>
-      <Box flexDirection="column">
-        <Box>{' '}</Box>
-        {data.map((row, index) => (
-          <Box key={index}>
-            [{index}]
-          </Box>
-        ))}
-      </Box>
-      {columns.map((c) => (
-        <Box flexDirection="column" key={c.id} paddingLeft={1}>
+      {columns.map((c, i, a) => (
+        <Box flexDirection="column" justifyContent={'space-between'} key={c.id} paddingRight={isLast(i, a) ? 0 : 4}>
           <Box>
             <Color bold underline blue>{c.label}</Color>
           </Box>
@@ -47,7 +41,7 @@ const Table: React.FC<ITableProps> = ({ meta, columns, data }) => {
 
 const TableComponent: React.FC<{ isPending?: boolean; tableProps: ITableProps }> = ({ tableProps, isPending }) => {
   return (
-    <Box marginY={1}>
+    <Box>
       {isPending && <Loader>Loading</Loader>}
       {!isPending && tableProps && <Table {...tableProps} />}
     </Box>
