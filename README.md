@@ -6,6 +6,10 @@ m**i**nk is an interactive terminal application designed to give you an overview
 
 > THIS IS STILL A WORK IN PROGRESS
 
+## Featured Plugins
+
+- [Jira](./packages/plugin-jira/README.md) (View your Board, Backlog, Issues, Versions and Projects)
+
 ## Install
 
 First you need to install the package, it uses Node.js so make sure you have that already installed.
