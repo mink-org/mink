@@ -1,6 +1,6 @@
 {
   "name": "@mink/cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -16,8 +16,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@mink/config": "^0.0.2",
-    "@mink/core": "^0.0.2"
+    "@mink/config": "^0.0.3",
+    "@mink/core": "^0.0.3"
   },
   "gitHead": "9338898a7e9f2173cd24312afea358cabfc46f6c"
 }
