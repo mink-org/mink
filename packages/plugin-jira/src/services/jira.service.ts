@@ -29,9 +29,15 @@ class Jira {
     }));
   }
 
-  async getIssues(jql) {
+  async getVersions() {
+    return await this.client.project.getVersions({
+      projectIdOrKey: this.projectKey,
+    });
+  }
+
+  async getAssignedIssues() {
     const results = await this.client.search.search({
-      jql,
+      jql: `project = "${this.projectKey}" AND resolution = Unresolved AND assignee in (currentUser()) ORDER BY status DESC, issuetype DESC`,
       fields: ['summary', 'issuetype', 'status'],
       maxResults: 15
     } as any);

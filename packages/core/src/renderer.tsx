@@ -22,10 +22,12 @@ const App: React.FC<IRendererProps> = ({ navigation, config }) => {
   try {
     Component = findComponent(navigation, indexPath);
     componentOptions = config.plugins[indexPath[0]] && config.plugins[indexPath[0]].options;
+  } catch (e) {
+
   }
 
   return (
-    <Box flexDirection={'column'}>
+    <Box flexDirection={'column'} >
       <Menu items={navigation} indexPath={indexPath} setIndexPath={setIndexPath} />
       <Box>{!Array.isArray(Component) && React.createElement(Component, { options: componentOptions })}</Box>
     </Box>

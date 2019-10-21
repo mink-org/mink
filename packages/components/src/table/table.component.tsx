@@ -20,6 +20,30 @@ interface ITableProps {
 
 const isLast = (i, a) => a.length - 1 === i;
 
+const formatCell = (val: any) => {
+  if (val === undefined) {
+    return <Color gray>---</Color>;
+  }
+
+  if (val === true) {
+    return <Color green>✔</Color>
+  }
+
+  if (val === false) {
+    return <Color red>✘</Color>
+  }
+
+  if (typeof val === 'string') {
+    return val;
+  }
+
+  if (typeof val === 'number') {
+    return val.toString(10);
+  }
+
+  return val;
+};
+
 const Table: React.FC<ITableProps> = ({ meta, columns, data }) => {
   return (
     <Box>
@@ -30,7 +54,7 @@ const Table: React.FC<ITableProps> = ({ meta, columns, data }) => {
           </Box>
           {data.map((row, index) => (
             <Box key={index}>
-              {row[c.id]}
+              {formatCell(row[c.id])}
             </Box>
           ))}
         </Box>

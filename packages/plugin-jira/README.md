@@ -6,8 +6,8 @@ Sections
 
 - [X] Board
 - [ ] Backlog
-- [ ] Issues
-- [ ] Versions
+- [X] Issues
+- [X] Versions
 - [ ] Projects
 
 ## Install
