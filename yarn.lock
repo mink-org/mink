@@ -3111,10 +3111,10 @@ isstream@~0.1.2:
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
-jira-connector@^2.16.1:
-  version "2.16.1"
-  resolved "https://registry.yarnpkg.com/jira-connector/-/jira-connector-2.16.1.tgz#999dad1d8a9264150cfa8c281e19544c6dd2cc27"
-  integrity sha512-5XOfkLN2ceg0JVtFnCXJmkNSR9vleWHsVQOd/okQzi3y4cvJu+vhhSW4e1OpQP9advsbW+uhHZFy9rfLn2aT+A==
+jira-connector@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/jira-connector/-/jira-connector-3.0.0.tgz#0b6d60b0be5d10aeb1dd6b546f056b74a440dede"
+  integrity sha512-Zk3qjA/emniesvLJMVDq8cGa+2U9eGh/yDDlXxDrOrk2TzadDUg1UJeNfuoNXFzzX6I4sdpo5MXHsN1bjlG0xw==
   dependencies:
     mime-types "^2.1.24"
     oauth "^0.9.12"
