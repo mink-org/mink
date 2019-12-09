@@ -16,7 +16,7 @@
   "dependencies": {
     "@mink/components": "^0.0.4",
     "ink": "^2.4.0",
-    "jira-connector": "^2.16.1",
+    "jira-connector": "^3.0.1",
     "react": "^16.9.0"
   }
 }
