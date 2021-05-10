@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "ink-box": "^1.0.0",
-    "ink-spinner": "^3.0.1",
+    "ink-spinner": "^4.0.2",
     "lerna": "^3.16.4",
     "typescript": "^3.6.3"
   },
